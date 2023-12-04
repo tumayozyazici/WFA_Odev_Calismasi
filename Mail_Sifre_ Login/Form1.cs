@@ -4,7 +4,7 @@ namespace Mail_Sifre__Login
     {
         public Form1()
         {
-            //Mail adresi isminiz@ank10.com þeklinde, þifre de ank10isminiz þeklindeolmalýdýr.
+            //Mail adresi isminiz@ank10.com þeklinde, þifre de ank10isminiz þeklinde olmalýdýr.
 
             InitializeComponent();
         }
@@ -37,7 +37,7 @@ namespace Mail_Sifre__Login
         }
         private bool Login(string mail, string sifre)
         {
-            if (mail == IsimAl(mail) + "@ank10.com" && sifre == ("ank10" + IsimAl(mail)))
+            if (mail == IsimAl(mail) + "@ank10.com" && sifre == "ank10" + IsimAl(mail))
             {
                 return true;
             }
